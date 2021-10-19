@@ -1,0 +1,13 @@
+<div class="container">
+  <div class="card">
+    <div class="card-header">Second Component</div>
+    <div class="card-body">
+      <button class="btn btn-primary" (click)="onRightClick('right')">
+        right
+      </button>
+      <span class="badge badge-primary" *ngIf="clicked$ | async as val"
+        >You clicked component :{{ val }}</span
+      >
+    </div>
+  </div>
+</div>
